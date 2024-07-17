@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Define log file location
-logFile="/home/yourusername/monitor.log"
+logFile="/home/aya/Desktop/task1/monitor.log"
 
 # Get the current date and time
 date=$(date '+%Y-%m-%d %H:%M:%S')
