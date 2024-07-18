@@ -31,5 +31,3 @@ echo "Some content" > /etc/readonlyfile
 
 USER_INPUT="ls -l"
 eval $USER_INPUT
-error_script.sh
-جارٍ عرض error_script.sh.
