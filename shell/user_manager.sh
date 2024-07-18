@@ -13,7 +13,7 @@ add_user() {
         echo "User '$username' already exists."
     else
         sudo useradd "$username"
-        if [ $? -eq 0 ]; then
+        if [ $? -eq 0 ]; then  # Check the exit status 
             echo "User '$username' has been added."
         else
             echo "Failed to add user '$username'."
