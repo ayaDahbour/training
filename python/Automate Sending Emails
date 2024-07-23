@@ -2,7 +2,7 @@ import smtplib
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 
-def send_email(sender_email, sender_password, recipient_email, subject, body):
+def send_email(senderEmail, senderPassword, recipientEmail, subject, body):
     # Create the email
     msg = MIMEMultipart()
     msg['From'] = sendeEmail
@@ -23,9 +23,9 @@ def send_email(sender_email, sender_password, recipient_email, subject, body):
 
 if __name__ == "__main__":
     # Email details
-    sender_email = "aya.dahbour2002@gmail.com"
-    sender_password = "yew---- ------"
-    recipient_email = "------18@gmail.com"
+    senderEmail = "aya.dahbour2002@gmail.com"
+    senderPassword = "yew---- ------"
+    recipientEmail = "------18@gmail.com"
     subject = "Test Email"
     body = "this is test"
 
