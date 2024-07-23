@@ -1,0 +1,29 @@
+import os
+
+def main():
+    # Print the current working directory
+    currentDirectory = os.getcwd()
+    print(f"Current working directory: {currentDirectory}")
+
+    # List all files and directories in the current directory
+    filesDirectories = os.listdir(currentDirectory)
+    print("Files and directories in current directory:")
+    for item in filesDirectories:
+        print(item)
+
+    # Create a new directory named 'test_dir'
+    newDirectory = 'test_dir'
+    try:
+        os.mkdir(newDirectory)
+        print(f"Directory '{newDirectory}' created")
+    except FileExistsError:
+        print(f"Directory '{newDirectory}' already exists")
+
+    # Change the current working directory to 'test_dir'
+    os.chdir(newDirectory)
+    newCurrentDirectory = os.getcwd()
+    print(f"Current working directory changed to: {newCurrentDirectory}")
+
+
+if __name__ == "__main__":
+    main()
